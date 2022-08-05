@@ -12,3 +12,13 @@ $bookCount = 2;
 
 $totalPrice = $priceOfBookTwo + $priceOfBookOne;
 echo "Total price: {$totalPrice}. {$lineBreak}";
+$totalPrice = $priceOfBookOne - $discount;
+echo "Total price with discount: {$totalPrice}. {$lineBreak}";
+$totalPrice = $priceOfBookOne * $bookCount;
+echo "Total price for two books: {$totalPrice}. {$lineBreak}";
+$totalPrice = $priceOfBookOne / $discount;
+echo "Total widh discount: {$totalPrice}. {$lineBreak}";
+$totalPrice = $priceOfBookOne % $priceOfBookTwo; // вычисление остатка от деления
+echo "Total: {$totalPrice}. {$lineBreak}";
+$totalPrice = $priceOfBookTwo ** $bookCount;  // возведение в степень
+echo "{$totalPrice}. {$lineBreak}";
