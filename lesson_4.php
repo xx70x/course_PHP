@@ -1,7 +1,7 @@
 <?php
 
 $lineBreak = "<br>";
-$greeting = "Welcom";
+$greeting = "Welcome";
 $clientName = "Alex";
 echo "{$greeting}, {$clientName}! {$lineBreak}";
 
@@ -18,7 +18,7 @@ echo "Total price with discount: {$totalPrice}. {$lineBreak}";
 $totalPrice = $priceOfBookOne * $bookCount;
 echo "Total price for two books: {$totalPrice}. {$lineBreak}";
 $totalPrice = $priceOfBookOne / $discount;
-echo "Total widh discount: {$totalPrice}. {$lineBreak}";
+echo "Total with discount: {$totalPrice}. {$lineBreak}";
 $totalPrice = $priceOfBookOne % $priceOfBookTwo; // вычисление остатка от деления
 echo "Total: {$totalPrice}. {$lineBreak}";
 $totalPrice = $priceOfBookTwo ** $bookCount;  // возведение в степень
