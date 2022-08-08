@@ -35,12 +35,6 @@ echo $d . $linkBreak;
 var_dump(isTeen(15));
 echo $d . $linkBreak;
 
-function isTeenCorrect ($age) {
-    $passGoldStandart = "1234";
-    return $age < 19 && $age > 10;
-}
-echo $d . $linkBreak;
-
 function isPasswordCorrect ($pass) {
     $passGoldStandart = "1234";
     return $pass === $passGoldStandart;
@@ -50,4 +44,17 @@ var_dump(isPasswordCorrect("1234"));
 echo $d . $linkBreak;
 echo "Является ли пароль корректным? ";
 var_dump(isPasswordCorrect("5678"));
+echo $d . $linkBreak;
+
+function isTeenCorrect ($age) {
+    $passGoldStandart = "1234";
+    return $age < 19 && $age > 10; //логическое умножение//конъюнкцией // true И true = true
+}
+
+//дизъюнкция/ логическое ИЛИ/
+var_dump(isTeenCorrect(17));
+echo $d . $linkBreak;
+var_dump(isTeenCorrect(5));
+echo $d . $linkBreak;
+var_dump(isTeenCorrect(26));
 echo $d . $linkBreak;
