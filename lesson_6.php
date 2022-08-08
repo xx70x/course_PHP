@@ -69,3 +69,15 @@ var_dump(isEven(6));
 echo $linkBreak;
 var_dump(isEven(9));
 echo $linkBreak;
+
+$a = 5;
+$b = "5";
+$d = $a + $b;
+echo $d;
+echo $linkBreak;
+echo 0 || 1; // 0 => false, 1 => true; false || true => true =>1
+echo $linkBreak;
+var_dump('' === falsse);
+echo $linkBreak;
+var_dump('' == falsse); //!не использовать
+echo $linkBreak;
