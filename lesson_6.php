@@ -31,9 +31,9 @@ function isTeen ($age) {
     return $age < 19;
 }
 var_dump(isTeen(25));
-echo $d . $linkBreak;
+echo $linkBreak;
 var_dump(isTeen(15));
-echo $d . $linkBreak;
+echo $linkBreak;
 
 function isPasswordCorrect ($pass) {
     $passGoldStandart = "1234";
@@ -41,20 +41,31 @@ function isPasswordCorrect ($pass) {
 }
 echo "Является ли пароль корректным? ";
 var_dump(isPasswordCorrect("1234"));
-echo $d . $linkBreak;
+echo $linkBreak;
 echo "Является ли пароль корректным? ";
 var_dump(isPasswordCorrect("5678"));
-echo $d . $linkBreak;
+echo $linkBreak;
 
 function isTeenCorrect ($age) {
     $passGoldStandart = "1234";
     return $age < 19 && $age > 10; //логическое умножение//конъюнкцией // true И true = true
 }
 
-//дизъюнкция/ логическое ИЛИ/
+// ||дизъюнкция/ логическое ИЛИ/
+// ! инверсия/ логическое НЕ/ !true ИЛИ false = true
+// !! двойная инверсия
 var_dump(isTeenCorrect(17));
-echo $d . $linkBreak;
+echo $linkBreak;
 var_dump(isTeenCorrect(5));
-echo $d . $linkBreak;
+echo $linkBreak;
 var_dump(isTeenCorrect(26));
-echo $d . $linkBreak;
+echo $linkBreak;
+
+function isEven($num) {
+    return $num % 2 === 0;
+}
+echo "Является ли число чётным? ";
+var_dump(isEven(6));
+echo $linkBreak;
+var_dump(isEven(9));
+echo $linkBreak;
