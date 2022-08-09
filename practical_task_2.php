@@ -1,0 +1,3 @@
+<?php
+
+$secondsPerHour = 60;
