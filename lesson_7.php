@@ -19,3 +19,23 @@ function typeOfAge1($age) {
 }
 echo typeOfAge1(5);
 echo typeOfAge1(16);
+
+function auth($login, $pass) {
+    $passwordFromDB = "1234";
+    $loginFromDB = "Alex";
+    $lineBreak = "<br>";
+
+    if ($login === $loginFromDB && $pass === $passwordFromDB) {
+        $result = "Добро пожаловать! {$lineBreak}";
+    } else {
+        if ($login === $loginFromDB) {
+            $result = "Проверьте пароль. {$lineBreak}";
+        }
+        else $result = "Пройдите регистрацию. {$lineBreak}";
+    }
+    return $result;
+}
+
+echo auth("Alex", "1234");
+echo auth("Alex", "12345");
+echo auth("Anna", "12346");
