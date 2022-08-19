@@ -77,7 +77,7 @@ echo $d;
 echo $linkBreak;
 echo 0 || 1; // 0 => false, 1 => true; false || true => true =>1
 echo $linkBreak;
-var_dump('' === falsse);
+var_dump('' === false);
 echo $linkBreak;
-var_dump('' == falsse); //!не использовать
+var_dump('' == false); //!не использовать
 echo $linkBreak;
