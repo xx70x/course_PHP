@@ -39,3 +39,39 @@ function auth($login, $pass) {
 echo auth("Alex", "1234");
 echo auth("Alex", "12345");
 echo auth("Anna", "12346");
+
+function absT($num) {
+    if ($num >= 0) {
+        return $num;
+    } else return -$num;
+}
+
+$lineBreak = "<br>";
+echo absT(-5) . $lineBreak;
+echo absT(10) . $lineBreak;
+
+function ternar($num) {
+    return $num >= 0 ? $num : -$num;
+}
+echo ternar(-5) . $lineBreak;
+echo ternar(10) . $lineBreak;
+
+
+$num = 3;
+
+switch($num) {
+
+    case 1;
+    $str = "Winter";
+    break;
+    case 2;
+    $str = "Spring";
+    break;
+    case 3;    
+    $str = "Summer";
+    break;
+    case 4;
+    $str = "Fall";
+    break;
+}
+echo $str . $lineBreak;
