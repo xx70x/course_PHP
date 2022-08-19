@@ -14,4 +14,4 @@ Address: 123 Main St
 City: Springville, CA
 INFO;
 
-echo n12br($information);
+//echo n12br($information);
